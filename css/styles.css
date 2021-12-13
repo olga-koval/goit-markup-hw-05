@@ -17,6 +17,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-bgd-color);
+  padding-top: 80px;
 }
 
 /* UTILITES */
@@ -95,6 +96,7 @@ body {
   width: 100%;
   min-height: 80px;
   background-color: var(--primary-bgd-color);
+  z-index: 1;
 }
 
 /* WEBSITE NAVIGATION SECTION */
@@ -576,7 +578,7 @@ body {
 
 /* PORTFOLIO PAGE SECTION */
 
-.header-portfolio {
+.portfolio-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -720,8 +722,5 @@ body {
 }
 
 .icon-close-button {
-  width: 18px;
-  height: 18px;
-  background-color: #fff;
-  border: none;
+  fill: #000000;
 }
