@@ -24,6 +24,7 @@ body {
 
 .link {
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -173,8 +174,8 @@ body {
   height: 12px;
   fill: currentColor;
   cursor: pointer;
-
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-envelope:hover,
@@ -187,8 +188,8 @@ body {
   width: 10px;
   height: 16px;
   fill: currentColor;
-
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-smartphone:hover,
@@ -251,6 +252,7 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   margin-top: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -430,6 +432,9 @@ body {
   border-radius: 50%;
   text-decoration: none;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon {
@@ -474,14 +479,9 @@ body {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  /* padding: 16px 32px; */
   cursor: pointer;
-}
-
-.customers-icon {
-  width: 106px;
-  height: 60px;
-  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -491,11 +491,11 @@ body {
   border: 1px solid var(--accent-color);
 }
 
-/* .customers-icon:hover,
-.customers-icon:focus,
-.customers-icon:active {
-  fill: var(--accent-color);
-} */
+.customers-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
 
 /* PAGE FOOTER SECTION */
 
@@ -585,6 +585,13 @@ body {
   border-radius: 50%;
   text-decoration: none;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-us-link:hover,
+.join-us-link:focus,
+.join-us-link:active {
+  background-color: var(--accent-color);
 }
 
 .join-us-icon {
@@ -592,12 +599,6 @@ body {
   height: 20px;
   fill: currentColor;
   cursor: pointer;
-}
-
-.join-us-link:hover,
-.join-us-link:focus,
-.join-us-link:active {
-  background-color: var(--accent-color);
 }
 
 /* PORTFOLIO PAGE SECTION */
@@ -630,6 +631,10 @@ body {
   cursor: pointer;
 
   padding: 6px 22px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -662,6 +667,8 @@ body {
 
 .works {
   margin-right: 30px;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works:nth-child(-n + 6) {
@@ -673,7 +680,6 @@ body {
 }
 
 .works:hover {
-  cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -716,6 +722,8 @@ body {
 
 .backdrop.is-hidden {
   opacity: 0;
+  /* DO WE REALLY NEED THIS VISIBILITY?? */
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -746,6 +754,10 @@ body {
   justify-content: center;
   align-items: center;
   fill: #000000;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover,
