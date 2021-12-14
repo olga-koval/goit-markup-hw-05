@@ -116,7 +116,13 @@ body {
   margin-right: 50px;
 }
 
+.item {
+  position: relative;
+}
+
 .site-nav-link {
+  position: relative;
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -126,6 +132,18 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+
+.site-nav-link.active:after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 4px);
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--accent-color);
 }
 
 /* WEBSITE CONTACTS SECTION */
@@ -233,6 +251,12 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   margin-top: 30px;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+  box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* OUR STRONG SIDES SECTION */
